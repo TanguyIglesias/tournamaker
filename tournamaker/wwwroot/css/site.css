@@ -1,18 +1,117 @@
-html {
-  font-size: 14px;
-}
-
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
-  position: relative;
-  min-height: 100%;
+    font-size: 62.5%;
 }
 
 body {
-  margin-bottom: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #212529;
+}
+
+/***************/
+/***************/
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 0 1rem 2rem;
+    background: #000;
+}
+
+.svg {
+    background: #000;
+    padding-bottom: 2rem;
+    margin-bottom: 5rem;
+}
+
+.main_nav_list {
+    display: flex;
+    gap: 3rem;
+    padding-right: 2rem;
+    list-style-type: none;
+}
+
+.main_nav_link:link,
+.main_nav_link:active,
+.main_nav_link:visited {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #dee2e6;
+    transition: all 0.2s;
+}
+
+.log_link:link,
+.log_link:active,
+.log_link:visited {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #adb5bd;
+    transition: all 0.2s;
+}
+
+.main_nav_link:hover,
+.log_link:hover {
+    color: #fff;
+}
+
+
+/**************************/
+/*************************/
+
+.section_hero {
+    display: flex;
+    gap: 2rem;
+    max-width: 120rem;
+    margin: auto;
+    align-items: center;
+}
+
+.box_title {
+    color: #fff;
+    font-size: 5rem;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-bottom: 2rem;
+}
+
+.box_description {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 0.2rem;
+    margin-bottom: 5rem;
+}
+
+.center_anchor {
+    text-align: center;
+}
+
+.box_btn:link,
+.box_btn:active,
+.box_btn:visited {
+    color: white;
+    font-size: 2.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: red;
+    padding: 1rem 2rem;
+    transition: all 0.3s;
+}
+
+.box_btn:hover {
+    background: #c92a2a;
 }
