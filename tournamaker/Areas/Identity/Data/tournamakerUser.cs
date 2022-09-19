@@ -11,7 +11,5 @@ public class tournamakerUser : IdentityUser
 {
     [PersonalData]
     public string? Name { get; set; }
-    [PersonalData]
-    public DateTime DOB { get; set; }
 }
 

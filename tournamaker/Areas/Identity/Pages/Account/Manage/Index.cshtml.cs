@@ -31,7 +31,7 @@ namespace tournamaker.Areas.Identity.Pages.Account.Manage
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
         ///     directly from your code. This API may change or be removed in future releases.
         /// </summary>
-        public string Username { get; set; }
+        public string Email { get; set; }
 
         /// <summary>
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
@@ -61,7 +61,7 @@ namespace tournamaker.Areas.Identity.Pages.Account.Manage
 
             [Required]
             [DataType(DataType.Text)]
-            [Display(Name = "Full name")]
+            [Display(Name = "Username")]
             public string Name { get; set; }
 
             [Required]
@@ -79,12 +79,11 @@ namespace tournamaker.Areas.Identity.Pages.Account.Manage
             var userName = await _userManager.GetUserNameAsync(user);
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
 
-            Username = userName;
+            Email = userName;
 
             Input = new InputModel
             {
                 Name = user.Name,
-                DOB = user.DOB,
                 PhoneNumber = phoneNumber
             };
         }
@@ -128,11 +127,6 @@ namespace tournamaker.Areas.Identity.Pages.Account.Manage
             if (Input.Name != user.Name)
             {
                 user.Name = Input.Name;
-            }
-
-            if (Input.DOB != user.DOB)
-            {
-                user.DOB = Input.DOB;
             }
 
             await _userManager.UpdateAsync(user);
