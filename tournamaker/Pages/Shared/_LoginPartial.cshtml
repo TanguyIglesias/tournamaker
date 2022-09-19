@@ -4,25 +4,31 @@
 @inject SignInManager<tournamakerUser> SignInManager
 @inject UserManager<tournamakerUser> UserManager
 
-<ul class="navbar-nav">
-@if (SignInManager.IsSignedIn(User))
-{
-    <li class="nav-item">
-        <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Account</a>
-    </li>
-    <li class="nav-item">
-        <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })">
-            <button id="logout" type="submit" class="nav-link btn btn-link text-dark">Logout</button>
-        </form>
-    </li>
-}
-else
-{
-    <li class="nav-item">
-        <a class="nav-link text-dark" id="register" asp-area="Identity" asp-page="/Account/Register">Register</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
-    </li>
-}
-</ul>
+
+
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <ul class="main_nav_list">
+            <li class="nav-item">
+                <a id="manage" class="log_link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+            </li>
+            <li class="nav-item">
+                <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })">
+                    <button id="logout" type="submit" class="log_link">Logout</button>
+                </form>
+                <a class="log_link" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })">Logout</a>
+            </li>
+        </ul>
+    }
+    else
+    {
+        <ul class="main_nav_list">
+            <li><a class="log_link" id="login" asp-area="Identity" asp-page="/Account/Login">Se connecter</a></li>
+            <li><a class="log_link" id="register" asp-area="Identity" asp-page="/Account/Register">S'inscrire</a></li>
+        </ul>
+    }
+
+
+
+    
+
