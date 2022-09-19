@@ -10,12 +10,12 @@
     {
         <ul class="main_nav_list">
             <li class="nav-item">
-                <a id="manage" class="log_link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+                <a id="manage" class="log_link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">My Account</a>
             </li>
             <li class="nav-item">
-                <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })">
+                @*<form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })">
                     <button id="logout" type="submit" class="log_link">Logout</button>
-                </form>
+                </form>*@
                 <a class="log_link" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })">Logout</a>
             </li>
         </ul>
