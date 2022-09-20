@@ -1,0 +1,22 @@
+﻿[
+  {
+    "outputFile": "wwwroot/css/auth.css",
+    "inputFile": "wwwroot/css/auth.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/main.css",
+    "inputFile": "wwwroot/css/main.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/_variables.css",
+    "inputFile": "wwwroot/css/_variables.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/_auth.css",
+    "inputFile": "wwwroot/css/_auth.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/base/reset.css",
+    "inputFile": "wwwroot/css/base/reset.scss"
+  }
+]

@@ -1,0 +1,61 @@
+﻿@import "_variables.css";
+@import "_variables.css";
+@import "_variables.css";
+.section_login {
+  max-width: 50rem;
+  margin: auto;
+}
+
+.log_title {
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 1.8rem;
+}
+
+.log_description {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1.6rem;
+}
+
+hr {
+  margin-bottom: 2.4rem;
+}
+
+.form-floating {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.8rem;
+}
+
+.form-label {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.form-control {
+  font-size: 2rem;
+  width: 40rem;
+  padding: 0.5rem;
+}
+
+.text-danger {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #212529;
+}

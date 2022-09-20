@@ -1,0 +1,45 @@
+﻿@import 'variables';
+
+.section_login {
+    max-width:50rem;
+    margin: auto;
+}
+
+.log_title {
+    font-size: 5rem;
+    color: $blanc;
+    margin-bottom: 1.8rem;
+}
+
+.log_description {
+    font-size: 2rem;
+    color: $blanc;
+    margin-bottom: 1.6rem;
+}
+
+hr {
+    margin-bottom: 2.4rem;
+}
+
+.form-floating {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.8rem;
+}
+
+.form-label {
+    font-size: 2rem;
+    color: $blanc;
+}
+
+.form-control {
+    font-size: 2rem;
+    width: 40rem;
+    padding: 0.5rem;
+}
+
+.text-danger {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: red;
+}
