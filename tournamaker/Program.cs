@@ -14,6 +14,9 @@ builder.Services.AddDefaultIdentity<tournamakerUser>(options => options.SignIn.R
     .AddEntityFrameworkStores<tournamakerContext>();
 
 // Add services to the container.
+
+builder.Services.AddServerSideBlazor();
+
 builder.Services.AddRazorPages();
 
 builder.Services.AddTransient<IEmailSender, EmailSender>();
@@ -37,6 +40,7 @@ app.UseAuthentication();;
 
 app.UseAuthorization();
 
+app.MapBlazorHub();
 app.MapRazorPages();
 
 app.Run();
