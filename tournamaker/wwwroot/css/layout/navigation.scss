@@ -1,11 +1,4 @@
-
-
-/***************/
-/***************/
-
-
-
-.navbar {
+﻿.navbar {
     display: flex;
     justify-content: space-between;
     padding: 1.2rem 0 1rem 2rem;
@@ -47,40 +40,3 @@
 .log_link:hover {
     color: #fff;
 }
-
-
-/**************************/
-/*************************/
-
-.section_hero {
-    display: flex;
-    gap: 6rem;
-    max-width: 120rem;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-
-    height: 100%;
-}
-
-.box_title {
-    color: #fff;
-    font-size: 5rem;
-    text-align: center;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    margin-bottom: 2rem;
-}
-
-.box_description {
-    color: #fff;
-    font-size: 2rem;
-    line-height: 1.5;
-    letter-spacing: 0.2rem;
-    margin-bottom: 5rem;
-    text-align: center;
-}
-
-.center_anchor {
-    text-align: center;
-}
-

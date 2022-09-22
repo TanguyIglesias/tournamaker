@@ -22,5 +22,13 @@
   {
     "outputFile": "wwwroot/css/components/buttons.css",
     "inputFile": "wwwroot/css/components/buttons.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/layout/navigation.css",
+    "inputFile": "wwwroot/css/layout/navigation.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/layout/footer.css",
+    "inputFile": "wwwroot/css/layout/footer.scss"
   }
 ]
