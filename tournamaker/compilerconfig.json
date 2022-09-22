@@ -18,5 +18,9 @@
   {
     "outputFile": "wwwroot/css/base/reset.css",
     "inputFile": "wwwroot/css/base/reset.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/components/buttons.css",
+    "inputFile": "wwwroot/css/components/buttons.scss"
   }
 ]

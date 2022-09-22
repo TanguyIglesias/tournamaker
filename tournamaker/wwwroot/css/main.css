@@ -45,6 +45,17 @@ hr {
   color: red;
 }
 
+.remember {
+  margin-bottom: 2rem;
+}
+
+.forgot_password:link, .forgot_password:active, .forgot_password:visited {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -57,5 +68,41 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #212529;
+  background: linear-gradient(225deg, #212529 0%, #0f2943 100%);
+}
+
+.box_btn:link,
+.box_btn:active,
+.box_btn:visited {
+  color: white;
+  font-size: 2.4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: red;
+  padding: 1rem 2rem;
+  transition: all 0.3s;
+}
+
+.box_btn:hover {
+  background: #c92a2a;
+}
+
+.log_btn {
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-weight: bold;
+  background: red;
+  padding: 1rem 2rem;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: 10rem;
+}
+
+.log_btn:hover {
+  background: #c92a2a;
 }
