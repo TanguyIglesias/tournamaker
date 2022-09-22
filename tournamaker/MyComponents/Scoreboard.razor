@@ -1,0 +1,53 @@
+﻿<h3>Scoreboard</h3>
+
+<div>
+    <span>@Score1</span>
+    <button @onclick="Add1">Add</button>
+    @if (Score1 > 0)
+    {
+        <button @onclick="Less1">Less</button>
+    }
+</div>
+
+<div>
+    <span>@Score2</span>
+    <button @onclick="Add2">Add</button>
+    @if (Score2 > 0)
+    {
+        <button @onclick="Less2">Less</button>
+    }
+</div>
+
+<button @onclick="Reset">Reset Score</button>
+
+@code {
+    private int Score1 { get; set; }
+    private int Score2 { get; set; }
+
+    private void Add1()
+    {
+        Score1++;
+    }
+
+    private void Less1()
+    {
+        Score1--;
+    }
+
+    private void Add2()
+    {
+        Score2++;
+    }
+
+    private void Less2()
+    {
+        Score2--;
+    }
+
+    private void Reset()
+    {
+        Score2 = 0;
+        Score1 = 0;
+    }
+
+}
