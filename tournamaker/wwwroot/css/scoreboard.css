@@ -5,6 +5,7 @@ body {
 body .title_sb {
   text-align: center;
   font-size: 6rem;
+  margin-bottom: 4rem;
 }
 body .scoreboard {
   width: 80rem;
@@ -32,7 +33,10 @@ body .player input {
   text-align: center;
   color: white;
   background: none;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+body .player input:hover {
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 body .score_tiret {
   font-size: 15rem;

@@ -11,6 +11,7 @@ body {
     .title_sb {
         text-align: center;
         font-size: 6rem;
+        margin-bottom: 4rem;
     }
 
     .scoreboard {
@@ -38,12 +39,17 @@ body {
             font-size: 10rem;
             text-align: center;
         }
-        input{
+
+        input {
             font-size: 2rem;
             text-align: center;
             color: white;
             background: none;
-            border: none;
+            border: 1px solid rgba(255, 255, 255, 0);
+        }
+
+        input:hover {
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
     }
 

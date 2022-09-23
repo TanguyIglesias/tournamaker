@@ -2,9 +2,8 @@
 <div class="scoreboard">
 <h3 class="title_sb">Scoreboard</h3>
 <div class="score_sb">
-    <div class="player">
-        <h3 class="player_name">@Player1</h3>
-        <input type="text" name="name" value="Player1" />
+    <div class="player">   
+        <input type="text" name="name" value="Player 1" />
         <p class="player_score">@Score1</p>
         <button @onclick="Add1">Add</button>
         <button @onclick="Less1">Less</button>
@@ -12,8 +11,7 @@
     </div>
     <div class="score_tiret">-</div>
     <div class="player">
-        <h3 class="player_name">@Player2</h3>
-        <input type="text" name="name" value="Player2" />
+        <input type="text" name="name" value="Player 2" />
         <p class="player_score">@Score2</p>
         <button @onclick="Add2">Add</button>
         <button @onclick="Less2">Less</button>
@@ -28,8 +26,7 @@
 @code {
     private int Score1 { get; set; }
     private int Score2 { get; set; }
-    private string? Player1 { get; set; }
-    private string? Player2 { get; set; }
+  
 
     private void Add1()
     {
