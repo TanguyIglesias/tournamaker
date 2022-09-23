@@ -1,9 +1,16 @@
-﻿body {
+﻿
+
+@import url('http://fonts.cdnfonts.com/css/score-board');
+
+
+
+body {
     color: white;
+
 
     .title_sb {
         text-align: center;
-        font-size: 3rem;
+        font-size: 6rem;
     }
 
     .scoreboard {
@@ -14,13 +21,42 @@
     .score_sb {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
-    .joueur1 {
-    }
-
-    .reset_sb{
+    .player {
         display: flex;
-        justify-content:center;
+        flex-direction: column;
+
+        .player_name {
+            font-size: 2rem;
+        }
+
+        .player_score {
+            //font-family: 'Silkscreen', cursive;
+            font-family: 'Bungee Outline', cursive;
+            font-size: 10rem;
+            text-align: center;
+        }
+        input{
+            font-size: 2rem;
+            text-align: center;
+            color: white;
+            background: none;
+            border: none;
+        }
+    }
+
+
+
+
+
+    .score_tiret {
+        font-size: 15rem;
+    }
+
+    .reset_sb {
+        display: flex;
+        justify-content: center;
     }
 }
