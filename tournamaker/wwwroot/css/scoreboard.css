@@ -1,0 +1,19 @@
+﻿body {
+  color: white;
+}
+body .title_sb {
+  text-align: center;
+  font-size: 3rem;
+}
+body .scoreboard {
+  width: 80rem;
+  margin: auto;
+}
+body .score_sb {
+  display: flex;
+  justify-content: space-between;
+}
+body .reset_sb {
+  display: flex;
+  justify-content: center;
+}

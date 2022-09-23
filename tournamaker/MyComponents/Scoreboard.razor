@@ -1,6 +1,7 @@
-﻿<h3>Scoreboard</h3>
-
+﻿
 <div class="scoreboard">
+<h3 class="title_sb">Scoreboard</h3>
+<div class="score_sb">
     <div class="joueur1">
         <span>@Score1</span>
         <button @onclick="Add1">Add</button>
@@ -19,7 +20,10 @@
         }
     </div>
 </div>
-<button @onclick="Reset">Reset Score</button>
+<div class="reset_sb">
+    <button @onclick="Reset">Reset Score</button>
+</div>
+</div>
 
 @code {
     private int Score1 { get; set; }
