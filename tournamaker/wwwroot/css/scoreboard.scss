@@ -1,0 +1,26 @@
+﻿body {
+    color: white;
+
+    .title_sb {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .scoreboard {
+        width: 80rem;
+        margin: auto;
+    }
+
+    .score_sb {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .joueur1 {
+    }
+
+    .reset_sb{
+        display: flex;
+        justify-content:center;
+    }
+}
