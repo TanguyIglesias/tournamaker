@@ -162,3 +162,12 @@ body {
   font-size: 1.8rem;
   color: #fff;
 }
+
+.section_profile {
+  display: flex;
+}
+
+profile_link:link, .profile_link:active, profile_link:visited {
+  font-size: 2rem;
+  color: #fff;
+}
