@@ -164,15 +164,15 @@ body {
   color: #fff;
 }
 
-<<<<<<< HEAD
 .section_profile {
   display: flex;
 }
 
-profile_link:link, .profile_link:active, profile_link:visited {
+.profile_link:link, .profile_link:active, profile_link:visited {
   font-size: 2rem;
   color: #fff;
-=======
+}
+
 body {
   color: white;
 }
@@ -218,5 +218,4 @@ body .score_tiret {
 body .reset_sb {
   display: flex;
   justify-content: center;
->>>>>>> f42cdedc0d75c37ffaba22d68a03889a86a49bf9
 }
