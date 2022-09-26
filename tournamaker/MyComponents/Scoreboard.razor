@@ -3,7 +3,7 @@
 <h3 class="title_sb">Scoreboard</h3>
 <div class="score_sb">
     <div class="player">   
-        <input type="text" name="name" value="Player 1" />
+        <input class="player1_sb" type="text" name="name" value="Player 1" />
         <p class="player_score">@Score1</p>
         <div class="button_sb">
             <button class="button-add-pushable" role="button" @onclick="Add1">
@@ -21,11 +21,19 @@
     </div>
     <div class="score_tiret">-</div>
     <div class="player">
-        <input type="text" name="name" value="Player 2" />
+        <input class="player2_sb" type="text" name="name" value="Player 2" />
         <p class="player_score">@Score2</p>
         <div class="button_sb">
-            <button  class="button_add_sb" @onclick="Add2">+</button>
-            <button class="button_less_sb" @onclick="Less2">-</button>
+            <button class="button-add-pushable" role="button" @onclick="Add2">
+                <span class="button-add-shadow"></span>
+                <span class="button-add2-edge"></span>
+                <span class="button-add2-front text">+</span>
+            </button>
+            <button class="button-add-pushable" role="button" @onclick="Less2">
+                <span class="button-add-shadow"></span>
+                <span class="button-add2-edge"></span>
+                <span class="button-add2-front text">–</span>
+            </button>
         </div>
         </div>
     </div>

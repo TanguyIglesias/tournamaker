@@ -20,8 +20,11 @@ body .score_sb .player {
   display: flex;
   flex-direction: column;
 }
-body .score_sb .player .player_name {
-  font-size: 2rem;
+body .score_sb .player .player1_sb {
+  color: red;
+}
+body .score_sb .player .player2_sb {
+  color: dodgerblue;
 }
 body .score_sb .player .player_score {
   font-family: "Bungee Outline", cursive;
@@ -77,6 +80,15 @@ body .score_sb .player .button_sb .button-add-edge {
   border-radius: 12px;
   background: linear-gradient(to left, #52001b 0%, #a30036 8%, #a30036 92%, #52001b 100%);
 }
+body .score_sb .player .button_sb .button-add2-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: deepskyblue;
+}
 body .score_sb .player .button_sb .button-add-front {
   display: block;
   position: relative;
@@ -85,6 +97,18 @@ body .score_sb .player .button_sb .button-add-front {
   font-size: 5rem;
   color: white;
   background: #f0003c;
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+body .score_sb .player .button_sb .button-add2-front {
+  display: block;
+  position: relative;
+  padding: 5px 22px;
+  border-radius: 12px;
+  font-size: 5rem;
+  color: white;
+  background: dodgerblue;
   will-change: transform;
   transform: translateY(-4px);
   transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
@@ -103,7 +127,15 @@ body .score_sb .player .button_sb .button-add-pushable:hover .button-add-front {
   transform: translateY(-6px);
   transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
+body .score_sb .player .button_sb .button-add-pushable:hover .button-add2-front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
 body .score_sb .player .button_sb .button-add-pushable:active .button-add-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+body .score_sb .player .button_sb .button-add-pushable:active .button-add2-front {
   transform: translateY(-2px);
   transition: transform 34ms;
 }
