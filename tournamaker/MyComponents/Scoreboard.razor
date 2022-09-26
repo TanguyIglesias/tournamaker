@@ -5,21 +5,32 @@
     <div class="player">   
         <input type="text" name="name" value="Player 1" />
         <p class="player_score">@Score1</p>
-        <button @onclick="Add1">Add</button>
-        <button @onclick="Less1">Less</button>
+        <div class="button_sb">
+            <button class="button-add-pushable" role="button" @onclick="Add1">
+                <span class="button-add-shadow"></span>
+                <span class="button-add-edge"></span>
+                <span class="button-add-front text">+</span>
+            </button>
+            <button class="button-add-pushable" role="button" @onclick="Less1">
+                <span class="button-add-shadow"></span>
+                <span class="button-add-edge"></span>
+                <span class="button-add-front text">–</span>
+            </button>
+        </div>
         
     </div>
     <div class="score_tiret">-</div>
     <div class="player">
         <input type="text" name="name" value="Player 2" />
         <p class="player_score">@Score2</p>
-        <button @onclick="Add2">Add</button>
-        <button @onclick="Less2">Less</button>
-
+        <div class="button_sb">
+            <button  class="button_add_sb" @onclick="Add2">+</button>
+            <button class="button_less_sb" @onclick="Less2">-</button>
+        </div>
+        </div>
     </div>
-</div>
 <div class="reset_sb">
-    <button @onclick="Reset">Reset Score</button>
+    <button class="button_reset_sb" @onclick="Reset">Reset Score</button>
 </div>
 </div>
 
