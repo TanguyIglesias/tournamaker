@@ -163,6 +163,7 @@ body {
   color: #fff;
 }
 
+<<<<<<< HEAD
 .section_profile {
   display: flex;
 }
@@ -170,4 +171,24 @@ body {
 profile_link:link, .profile_link:active, profile_link:visited {
   font-size: 2rem;
   color: #fff;
+=======
+body {
+  color: white;
+}
+body .title_sb {
+  text-align: center;
+  font-size: 3rem;
+}
+body .scoreboard {
+  width: 80rem;
+  margin: auto;
+}
+body .score_sb {
+  display: flex;
+  justify-content: space-between;
+}
+body .reset_sb {
+  display: flex;
+  justify-content: center;
+>>>>>>> f42cdedc0d75c37ffaba22d68a03889a86a49bf9
 }

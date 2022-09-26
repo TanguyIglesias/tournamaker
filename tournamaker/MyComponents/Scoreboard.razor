@@ -1,24 +1,29 @@
-﻿<h3>Scoreboard</h3>
+﻿
+<div class="scoreboard">
+<h3 class="title_sb">Scoreboard</h3>
+<div class="score_sb">
+    <div class="joueur1">
+        <span>@Score1</span>
+        <button @onclick="Add1">Add</button>
+        @if (Score1 > 0)
+        {
+            <button @onclick="Less1">Less</button>
+        }
+    </div>
 
-<div>
-    <span>@Score1</span>
-    <button @onclick="Add1">Add</button>
-    @if (Score1 > 0)
-    {
-        <button @onclick="Less1">Less</button>
-    }
+    <div class="joueur2">
+        <span>@Score2</span>
+        <button @onclick="Add2">Add</button>
+        @if (Score2 > 0)
+        {
+            <button @onclick="Less2">Less</button>
+        }
+    </div>
 </div>
-
-<div>
-    <span>@Score2</span>
-    <button @onclick="Add2">Add</button>
-    @if (Score2 > 0)
-    {
-        <button @onclick="Less2">Less</button>
-    }
+<div class="reset_sb">
+    <button @onclick="Reset">Reset Score</button>
 </div>
-
-<button @onclick="Reset">Reset Score</button>
+</div>
 
 @code {
     private int Score1 { get; set; }
