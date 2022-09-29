@@ -15,6 +15,7 @@ At the term of this project, the users will be able to create an account, sign i
 ##Languages used
 
 **Front:** SASS / Razor Pages (.NET CORE 6)
+
 **Back:** C# / .NET CORE 6 (MVVM Razor Pages)
 
 ## Features
