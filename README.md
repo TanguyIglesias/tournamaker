@@ -87,4 +87,4 @@ BO 1/3/5
 
 - [x] Account 
 
-- [] Tournament Generator 
+- [ ] Tournament Generator 
