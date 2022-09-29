@@ -12,7 +12,7 @@
 We're going to build a tournament generator website.
 At the term of this project, the users will be able to create an account, sign in, use the scoreboard and generate tournament.
 
-##Languages used
+## Languages used
 
 **Front:** SASS / Razor Pages (.NET CORE 6)
 
