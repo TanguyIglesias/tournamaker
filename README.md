@@ -1,11 +1,11 @@
 # Tournamaker
 
 ## Teams
--Tanguy Iglesias
+-[@Tanguy Iglesias](https://github.com/TanguyIglesias)
 
--Semih Bekki
+-[@Semih Bekki](https://github.com/SemihBk)
 
--Melih Akar
+-[@Melih Akar](https://github.com/MelihAkar4020)
 
 ## Project
 
