@@ -83,8 +83,8 @@ BO 1/3/5
 .
 
 **Project Now**
-- Scoreboard [x]
+- [x] Scoreboard 
 
-- Account [x]
+- [x] Account 
 
-- Tournament Generator []
+- [] Tournament Generator 
