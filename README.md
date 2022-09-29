@@ -76,5 +76,5 @@ BO 1/3/5
 **Users**
 | **Guest** | **Registered** |
 | ----------- | ----------- |
-| Score board Access  | Access to his account and edit it |
+| Scoreboard Access  | Access to his account and edit it |
 | | Create Tournament | 
