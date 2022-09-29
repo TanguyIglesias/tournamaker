@@ -78,3 +78,11 @@ BO 1/3/5
 | ----------- | ----------- |
 | Scoreboard Access  | Access to his account and edit it |
 | | Create Tournament | 
+
+.
+.
+
+**Project Now**
+Scoreboard [x]
+Account [x]
+Tournament Generator []
