@@ -1,5 +1,10 @@
 ﻿@page
 @model IndexModel
+@using Microsoft.AspNetCore.Identity
+@using tournamaker.Areas.Identity.Data
+
+@inject SignInManager<tournamakerUser> SignInManager
+@inject UserManager<tournamakerUser> UserManager
 @{
     ViewData["Title"] = "TournaMaker";
 }
@@ -16,7 +21,15 @@
             modi. Lorem ipsum dolor sit amet consectetur.
         </p>
         <div class="center_anchor">
-            <a class="box_btn" href="">Créer votre tournoi</a>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <a class="box_btn" asp-page="/Tournoi">Créer votre tournoi</a>
+            }
+            else
+            {
+                <a class="box_btn" asp-area="Identity" asp-page="/Account/Login">Créer votre tournoi</a>
+            }
+
         </div>
     </div>
     <div class="img_box">

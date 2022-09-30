@@ -2,11 +2,54 @@
     display: flex;
 }
 
-.profile_item {
-    //font-size: 2rem;
+.profil_link {
+    
+    background-color: #EEEEEE;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 5px;
+    margin-right: 10rem;
+    color:black;
 }
 
-.profile_link:link, .profile_link:active, profile_link:visited {
+.profil_link:link, .profil_link:active, profil_link:visited {
     font-size: 2rem;
     color: #fff;
+}
+.profil_link:hover{
+    background-color: red;
+    color: white;
+}
+
+.status_profile{
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.delete_data_form{
+    font-size: 2rem;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.delete_data_link {
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    background: red;
+    padding: 1rem 2rem;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.delete_data_link:hover {
+    background: #c92a2a;
 }
