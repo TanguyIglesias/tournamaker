@@ -2,6 +2,7 @@
 @import "_variables.css";
 @import "_variables.css";
 @import "_variables.css";
+@import "_variables.css";
 .section_login {
   max-width: 50rem;
   margin: auto;
@@ -236,6 +237,20 @@ body {
 
 .delete_data_link:hover {
   background: #c92a2a;
+}
+
+.profile_title {
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 1.8rem;
+  margin-left: 2.4rem;
+}
+
+.profile_description {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 1.6rem;
+  margin-left: 2.4rem;
 }
 
 body {
